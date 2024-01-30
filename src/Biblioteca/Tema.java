@@ -1,21 +1,29 @@
 package Biblioteca;
 
+import java.util.Set;
+
 public class Tema {
-    private String nombre;
+    private int cod_t;
+    private Set<Tema> temas;
 
-    public Tema(String nombre) {
-        this.nombre = nombre;
+    public Tema(int cod_t, Set<Tema> temas) {
+        this.cod_t = cod_t;
+        this.temas = temas;
     }
 
-    public String getNombre() {
-        return nombre;
+    public int getCod_t() {
+        return cod_t;
     }
 
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
+    public void setCod_t(int cod_t) {
+        this.cod_t = cod_t;
     }
-    @Override
-    public String toString(){
-        return this.nombre;
+
+    public Set<Tema> getTemas() {
+        return temas;
+    }
+
+    public void setTemas(Set<Tema> temas) {
+        this.temas = temas;
     }
 }

@@ -1,4 +1,4 @@
-package Biblioteca;
+package Libros;
 
 import java.util.ArrayList;
 import java.util.Arrays;

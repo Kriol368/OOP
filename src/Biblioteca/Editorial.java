@@ -2,21 +2,21 @@ package Biblioteca;
 
 import java.util.Set;
 
-public class Autor {
-    private int cod_autor;
+public class Editorial {
+    private int cod_ed;
     private Set<Llibre> llibres;
 
-    public Autor(int cod_autor, Set<Llibre> llibres) {
-        this.cod_autor = cod_autor;
+    public Editorial(int cod_ed, Set<Llibre> llibres) {
+        this.cod_ed = cod_ed;
         this.llibres = llibres;
     }
 
-    public int getCod_autor() {
-        return cod_autor;
+    public int getCod_ed() {
+        return cod_ed;
     }
 
-    public void setCod_autor(int cod_autor) {
-        this.cod_autor = cod_autor;
+    public void setCod_ed(int cod_ed) {
+        this.cod_ed = cod_ed;
     }
 
     public Set<Llibre> getLlibres() {
