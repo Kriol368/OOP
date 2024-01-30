@@ -13,6 +13,7 @@ public class Computer {
         this.specs = specs;
     }
 
+
     public String getModel() {
         return model;
     }
