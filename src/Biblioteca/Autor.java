@@ -1,3 +1,5 @@
+package Biblioteca;
+
 import java.util.Date;
 
 public class Autor {
@@ -27,7 +29,7 @@ public class Autor {
 
     @Override
     public String toString() {
-        return this.nombre + " " + this.fechaDeNacimiento;
+        return this.nombre;
     }
 }
 
