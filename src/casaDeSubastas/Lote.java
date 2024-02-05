@@ -1,5 +1,6 @@
 package casaDeSubastas;
 
+import java.util.HashSet;
 import java.util.Set;
 
 public class Lote {
@@ -10,10 +11,11 @@ public class Lote {
     private Set<Pujador> pujadores;
     private Pujador comprador;
 
-    public Lote(int numeroLote, double precioSalida, Set<Articulo> articulos) {
+    public Lote(int numeroLote, double precioSalida) {
         this.numeroLote = numeroLote;
         this.precioSalida = precioSalida;
-        this.articulos = articulos;
+        this.articulos = new HashSet<>();
+        this.pujadores = new HashSet<>();
     }
 
     public int getNumeroLote() {
@@ -62,5 +64,20 @@ public class Lote {
 
     public void setComprador(Pujador comprador) {
         this.comprador = comprador;
+    }
+
+    public void añadirArticulo(Articulo articulo){
+        this.articulos.add(articulo);
+    }
+
+    public void añadirPujador(Pujador pujador){
+        this.pujadores.add(pujador);
+    }
+
+    @Override
+    public String toString(){
+        return "Numero de Lote: " + this.numeroLote + "\n"
+                + "Precio de salida: " + this.precioSalida + "€"
+                + "\n";
     }
 }

@@ -34,4 +34,10 @@ public class Puja {
     public void setLote(Lote lote) {
         this.lote = lote;
     }
+
+    @Override
+    public String toString(){
+        return "Cantidad: " + this.cantidad
+                + "\n";
+    }
 }

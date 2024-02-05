@@ -1,14 +1,15 @@
 package casaDeSubastas;
 
+import java.util.HashSet;
 import java.util.Set;
 
 public class Subasta {
     private String dia;
     private Set<Lote> lotes;
 
-    public Subasta(String dia, Set<Lote> lotes) {
+    public Subasta(String dia) {
         this.dia = dia;
-        this.lotes = lotes;
+        this.lotes = new HashSet<>();
     }
 
     public String getDia() {
@@ -25,5 +26,16 @@ public class Subasta {
 
     public void setLotes(Set<Lote> lotes) {
         this.lotes = lotes;
+    }
+
+    public void añadirLote(Lote lote){
+        this.lotes.add(lote);
+    }
+
+    @Override
+    public String toString(){
+        return  "Dia: " + this.dia
+        + "\n";
+
     }
 }

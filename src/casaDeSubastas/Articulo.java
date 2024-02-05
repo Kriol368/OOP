@@ -33,4 +33,11 @@ public class Articulo {
     public void setLote(Lote lote) {
         this.lote = lote;
     }
+
+    @Override
+    public String toString(){
+        return "Nombre: " + this.nombre + "\n"
+                + "Precio: " + this.precio + "€" + "\n"
+                + "\n";
+    }
 }
